@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1c1c;
+    font-family: Arial, sans-serif;
+  }
+  
+  .clock {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 10px solid #f0f0f0;
+    border-radius: 50%;
+    background: radial-gradient(circle, #333, #111);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .hand {
+    position: absolute;
+    bottom: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  
+  .hour {
+    width: 8px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    z-index: 3;
+  }
+  
+  .minute {
+    width: 6px;
+    height: 80px;
+    background-color: #ffca28;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  
+  .second {
+    width: 2px;
+    height: 90px;
+    background-color: #e53935;
+    border-radius: 1px;
+    z-index: 1;
+  }
+  
